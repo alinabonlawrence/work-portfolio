@@ -1,0 +1,65 @@
+.projects {
+	color: $text-color;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+
+	h3 {
+		font-weight: 400;
+		font-size: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	&__row {
+		display: flex;
+		width: 80%;
+		margin: auto;
+		border: 1 px solid;
+	}
+
+	&__col-1 {
+		align-self: center;
+		flex: 1;
+		border: 1 px solid;
+		text-align: center;
+	}
+
+	&__col-2 {
+		flex: 1;
+		border: 1 px solid;
+		text-align: justify;
+		text-justify: inter-word;
+		line-height: 2rem;
+		margin-left: 5rem;
+
+		h2 {
+			font-weight: 400;
+			font-size: 1.5rem;
+		}
+
+		p {
+			text-align: justify;
+			text-justify: inter-word;
+			margin-top: 2rem;
+		}
+
+		.link {
+			margin-top: 2rem;
+		}
+		.site-link {
+			color: $tertiary-color;
+			background-color: $secondary-color;
+			padding: 1rem 3rem;
+
+			&:hover {
+				background: $tertiary-color;
+				color: $text-color;
+			}
+		}
+	}
+	&__img {
+		width: 100%;
+		padding: 1rem;
+		border: 1rem solid $secondary-color;
+	}
+}

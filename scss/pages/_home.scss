@@ -1,0 +1,67 @@
+@import url('/images/bg2-2.png');
+.home {
+	color: $text-color;
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	background-image: url('/images/bg2-5.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	&__greetings {
+		background-color: #fc5185;
+		display: inline-block;
+		text-align: center;
+		padding: 0.25em 1.5rem;
+		border-radius: 50rem 50rem 50rem 0px;
+		color: $text-color;
+	}
+	&__row {
+		display: flex;
+		width: 80%;
+		height: 100vh;
+		margin: auto;
+	}
+	&__col-1 {
+		align-self: center;
+		flex: 1;
+	}
+	&__col-2 {
+		align-self: center;
+		text-align: center;
+		flex: 1;
+	}
+
+	&__name {
+		font-size: 4.5rem;
+		font-weight: 500;
+	}
+
+	&__title {
+		font-size: 1.5rem;
+		font-weight: 300;
+	}
+
+	&__contact {
+		margin-top: 2rem;
+	}
+	&__link-list {
+		margin-top: 1rem;
+	}
+	&__contact-link {
+		color: $text-color;
+		line-height: 2rem;
+		margin-right: 3rem;
+
+		&:hover {
+			color: $tertiary-color;
+		}
+	}
+
+	&__img {
+		border-radius: 100%;
+		width: 50%;
+		border: 0.5rem solid $secondary-color;
+		padding: 1rem;
+	}
+}

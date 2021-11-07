@@ -1,0 +1,53 @@
+.nav {
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+	width: 100%;
+	padding: 30px 20px;
+	color: $text-color;
+	z-index: 1;
+	transition: 0.4s ease-out;
+	font-size: 1.2rem;
+	background: $secondary-color;
+
+	&__link {
+		text-decoration: none;
+		color: inherit;
+		margin: 0.2rem;
+		padding: 1rem 0.5rem;
+
+		&:hover {
+			color: $tertiary-color;
+		}
+	}
+
+	&__item {
+		margin-left: 30px;
+	}
+
+	&__list {
+		display: flex;
+		list-style: none;
+	}
+
+	&__icon {
+		position: relative;
+		padding: 10px 10px;
+		cursor: pointer;
+		z-index: 1;
+		display: none;
+		font-size: 2rem;
+	}
+
+	&__btn {
+		display: none;
+	}
+
+	&.scrolled {
+		height: 50px;
+		background: $secondary-color;
+		color: $tertiary-color;
+	}
+}

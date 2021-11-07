@@ -1,0 +1,85 @@
+.about {
+	color: $text-color;
+	width: 100%;
+	margin: auto;
+	background: #1c2835;
+
+	&__row {
+		display: flex;
+		width: 80%;
+		margin: 5rem auto;
+		border: 1 px solid;
+	}
+
+	&__col-1 {
+		align-self: center;
+		flex: 1;
+		border: 1 px solid;
+	}
+
+	&__col-2 {
+		align-self: center;
+		text-align: center;
+		flex: 1;
+		border: 1 px solid;
+		text-align: justify;
+		text-justify: inter-word;
+		line-height: 2rem;
+	}
+
+	&__img {
+		width: 100%;
+		padding: 1rem;
+	}
+
+	&__aboutme {
+		margin-bottom: 2rem;
+		font-weight: 400;
+		font-size: 2rem;
+	}
+
+	&__job-row {
+		display: flex;
+		width: 80%;
+		margin: 5rem auto;
+		border: 1 px solid;
+	}
+
+	&__job-col-1 {
+		align-self: center;
+		flex: 1;
+		border: 1 px solid white;
+		text-align: center;
+	}
+	&__job-col-2 {
+		align-self: center;
+		flex: 1;
+		border: 1 px solid white;
+		text-align: center;
+	}
+	&__job-col-3 {
+		align-self: center;
+		flex: 1;
+		border: 1 px solid white;
+		text-align: center;
+	}
+
+	&__card {
+		width: 80%;
+		height: 50vh;
+		background: $secondary-color;
+		padding: 2rem;
+		margin: 2rem;
+		&__img {
+			width: 100%;
+			height: 70%;
+			margin: auto;
+		}
+
+		&__title {
+			font-size: 1.5rem;
+			font-weight: 400;
+			margin-top: 4rem;
+		}
+	}
+}

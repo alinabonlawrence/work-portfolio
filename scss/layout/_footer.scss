@@ -1,0 +1,29 @@
+.footer {
+	color: $text-color;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+
+	&__row {
+		display: flex;
+		width: 80%;
+		margin: auto;
+		border: 1 px solid;
+	}
+
+	&__col-1 {
+		align-self: center;
+		flex: 1;
+		border: 1 px solid;
+		text-align: center;
+	}
+
+	&__col-2 {
+		flex: 1;
+		border: 1 px solid;
+		text-align: justify;
+		text-justify: inter-word;
+		line-height: 2rem;
+		margin-left: 5rem;
+	}
+}

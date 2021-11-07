@@ -1,0 +1,44 @@
+form {
+	background-color: $secondary-color;
+	padding: 2rem;
+
+	.form-row {
+		display: flex;
+		width: 100%;
+		margin: auto;
+		border: 1 px solid;
+
+		.form-col {
+			align-self: center;
+			flex: 1;
+			border: 1 px solid;
+			text-align: left;
+		}
+	}
+	.form-group {
+		display: block;
+		padding: 0.5rem;
+		text-align: left;
+	}
+
+	.form-control {
+		padding: 0.5rem;
+		border-radius: 5px;
+		font-family: $font;
+		width: 100%;
+		margin-bottom: 0.5rem;
+	}
+
+	.form-btn {
+		display: block;
+		width: 100%;
+		padding: 0.5rem;
+		border-radius: 5px;
+		font-family: $font;
+		background-color: $tertiary-color;
+		color: $text-color;
+		outline: none;
+		border: none;
+		cursor: pointer;
+	}
+}

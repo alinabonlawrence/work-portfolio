@@ -1,0 +1,30 @@
+.u-text-left {
+	text-align: left;
+}
+
+.u-text-right {
+	text-align: right;
+}
+
+.u-text-center {
+	text-align: center;
+}
+
+.u-justify-text {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+@media only screen and (max-width: 768px) {
+	.u-text-md-left {
+		text-align: left;
+	}
+
+	.u-text-md-right {
+		text-align: right;
+	}
+
+	.u-text-md-center {
+		text-align: center;
+	}
+}
