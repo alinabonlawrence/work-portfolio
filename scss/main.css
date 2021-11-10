@@ -210,7 +210,7 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
   .nav__icon {
     display: block;
   }
@@ -298,15 +298,10 @@ body {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    margin-top: 15vh;
-  }
-  .home__col-2 {
-    margin-top: 15vh;
-    display: none;
   }
   .home__img {
     border-radius: 100%;
-    width: 100%;
+    width: 300px;
     height: 100%;
     border: 0.5rem solid #243447;
     padding: 1rem;
@@ -322,6 +317,26 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about__job-col-1 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 60%;
+  }
+  .about__job-col-2 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 60%;
+  }
+  .about__job-col-3 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 60%;
   }
   .projects__row {
     -webkit-box-orient: vertical;
@@ -331,7 +346,11 @@ body {
   }
   .projects__col-2 {
     text-align: center;
-    text-justify: unset;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
   }
   .contact__row {
     -webkit-box-orient: vertical;
@@ -341,6 +360,24 @@ body {
   }
   .contact__map {
     height: 400px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .home__img {
+    width: 300px !important;
+  }
+  .home__name {
+    font-size: 4rem !important;
+  }
+  .about__job-col-1 {
+    width: 80%;
+  }
+  .about__job-col-2 {
+    width: 80%;
+  }
+  .about__job-col-3 {
+    width: 80%;
   }
 }
 
@@ -390,7 +427,7 @@ body {
   height: 100vh;
   width: 100%;
   margin: auto;
-  background-image: url("./images/bg2-5.png");
+  background-image: url("/images/bg6.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -462,7 +499,7 @@ body {
 
 .home__img {
   border-radius: 100%;
-  width: 50%;
+  width: 400px;
   border: 0.5rem solid #243447;
   padding: 1rem;
 }
@@ -536,6 +573,7 @@ body {
           flex: 1;
   border: 1 px solid white;
   text-align: center;
+  margin: 0;
 }
 
 .about__job-col-2 {
@@ -561,8 +599,8 @@ body {
 }
 
 .about__card {
-  width: 80%;
-  height: 50vh;
+  width: 100%;
+  height: 40vh;
   background: #243447;
   padding: 2rem;
   margin: 2rem;
@@ -570,12 +608,11 @@ body {
 
 .about__card__img {
   width: 100%;
-  height: 70%;
   margin: auto;
 }
 
 .about__card__title {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 400;
   margin-top: 4rem;
 }
@@ -661,6 +698,7 @@ body {
   width: 100%;
   margin: auto;
   text-align: center;
+  background: #1c2835;
 }
 
 .contact h3 {

@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
 	.nav {
 		&__icon {
 			display: block;
@@ -76,17 +76,11 @@
 		}
 		&__col-1 {
 			order: 1;
-			margin-top: 15vh;
-		}
-
-		&__col-2 {
-			margin-top: 15vh;
-			display: none;
 		}
 
 		&__img {
 			border-radius: 100%;
-			width: 100%;
+			width: 300px;
 			height: 100%;
 			border: 0.5rem solid $secondary-color;
 			padding: 1rem;
@@ -100,6 +94,20 @@
 
 		&__job-row {
 			flex-direction: column;
+			flex-wrap: wrap;
+		}
+
+		&__job-col-1 {
+			align-self: center;
+			width: 60%;
+		}
+		&__job-col-2 {
+			align-self: center;
+			width: 60%;
+		}
+		&__job-col-3 {
+			align-self: center;
+			width: 60%;
 		}
 	}
 
@@ -110,7 +118,8 @@
 
 		&__col-2 {
 			text-align: center;
-			text-justify: unset;
+			align-content: center;
+			flex: none;
 		}
 	}
 
@@ -121,6 +130,30 @@
 
 		&__map {
 			height: 400px;
+		}
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.home {
+		&__img {
+			width: 300px !important;
+		}
+
+		&__name {
+			font-size: 4rem !important;
+		}
+	}
+
+	.about {
+		&__job-col-1 {
+			width: 80%;
+		}
+		&__job-col-2 {
+			width: 80%;
+		}
+		&__job-col-3 {
+			width: 80%;
 		}
 	}
 }
